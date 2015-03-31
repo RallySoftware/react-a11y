@@ -10,8 +10,8 @@
   "homepage": "https://github.com/RallySoftware/react-a11y/blob/latest/README.md",
   "bugs": "https://github.com/RallySoftware/react-a11y/issues",
   "scripts": {
-    "test": "jsxhint . && karma start --single-run",
-    "prepublish": "6to5 -d dist lib"
+    "test": "./node_modules/jsxhint/jsxhint.js . && karma start --single-run",
+    "prepublish": "./node_modules/6to5/bin/6to5-node -d dist lib"
   },
   "authors": [
     "Ryan Florence"
