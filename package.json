@@ -1,14 +1,14 @@
 {
   "name": "react-a11y",
-  "version": "0.0.6",
+  "version": "0.0.6-rally",
   "description": "Warns about potential accessibility issues with your React elements.",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rackt/react-a11y.git"
+    "url": "https://github.com/RallySoftware/react-a11y.git"
   },
-  "homepage": "https://github.com/rackt/react-a11y/blob/latest/README.md",
-  "bugs": "https://github.com/rackt/react-a11y/issues",
+  "homepage": "https://github.com/RallySoftware/react-a11y/blob/latest/README.md",
+  "bugs": "https://github.com/RallySoftware/react-a11y/issues",
   "scripts": {
     "test": "jsxhint . && karma start --single-run",
     "prepublish": "6to5 -d dist lib"
@@ -34,7 +34,7 @@
     "webpack": "^1.4.13"
   },
   "peerDependencies": {
-    "react": "0.12.x"
+    "react": ">=0.12.0 <0.14.0"
   },
   "tags": [
     "accessibility",
@@ -45,5 +45,8 @@
     "accessibility",
     "react",
     "a11y"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "http://npm-publish.f4tech.com"
+  }
 }
